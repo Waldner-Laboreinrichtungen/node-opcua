@@ -26,7 +26,8 @@ export type NodesetName =
     | "robotics"
     | "scales"
     | "tightening"
-    | "woodWorking";
+    | "woodWorking"
+    | "lads";
 
 export type NodesetMeta = {
     /// used as key in exported nodesets object as well as in index_web.js
@@ -291,6 +292,14 @@ export const nodesetCatalog: NodesetMeta[] = [
         xmlFile: "Opc.Ua.Scales.NodeSet2.xml",
         dependencies: ['di', 'ia', 'machinery', 'packML'],
         licence: "DUAL"
+    },
+    {
+        name: "lads",
+        packageName: "lads",
+        uri: "http://opcfoundation.org/UA/LADS/",
+        xmlFile: "Opc.Ua.LADS.NodeSet2.xml",
+        dependencies: ['di', 'amb', 'machinery'],
+        licence: "MIT"
     }
 
 ];
