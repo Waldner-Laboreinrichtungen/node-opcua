@@ -6,6 +6,7 @@ export * from "./clone_options";
 export * from "./continuation_point";
 export * from "./event_notifier_flags";
 export * from "./i_event_data";
+export * from "./i_event_historian";
 export * from "./modelling_rule_type";
 export * from "./namespace";
 export * from "./session_context";
