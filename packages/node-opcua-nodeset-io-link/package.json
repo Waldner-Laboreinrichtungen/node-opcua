@@ -1,40 +1,45 @@
 {
-    "name": "node-opcua-nodeset-io-link",
-    "version": "2.169.0-ievent.1",
-    "description": "pure nodejs OPCUA SDK - module node-opcua-nodeset-io-link",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "scripts": {
-        "clean": "npx rimraf -g  dist *.tsbuildinfo",
-        "build": "tsc -b"
-    },
-    "author": "Etienne Rossignon <etienne.rossignon@sterfive.com>",
-    "license": "MIT",
-    "dependencies": {
-        "node-opcua-address-space-base": "2.169.0-ievent.1",
-        "node-opcua-basic-types": "2.169.0-ievent.1",
-        "node-opcua-data-model": "2.169.0-ievent.1",
-        "node-opcua-nodeid": "2.169.0-ievent.1",
-        "node-opcua-nodeset-di": "2.169.0-ievent.1",
-        "node-opcua-nodeset-ua": "2.169.0-ievent.1",
-        "node-opcua-status-code": "2.169.0-ievent.1",
-        "node-opcua-variant": "2.169.0-ievent.1"
-    },
-    "files": [
-        "dist",
-        "source"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/node-opcua/node-opcua.git"
-    },
-    "keywords": [
-        "OPCUA",
-        "opcua",
-        "m2m",
-        "iot",
-        "opc ua",
-        "internet of things"
-    ],
-    "homepage": "http://node-opcua.github.io/"
+  "name": "@waldner-laboreinrichtungen/node-opcua-nodeset-io-link",
+  "version": "2.169.0-ievent.1",
+  "description": "pure nodejs OPCUA SDK - module node-opcua-nodeset-io-link",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "npx rimraf -g  dist *.tsbuildinfo",
+    "build": "tsc -b"
+  },
+  "author": "Etienne Rossignon <etienne.rossignon@sterfive.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node-opcua-address-space-base": "npm:@waldner-laboreinrichtungen/node-opcua-address-space-base@2.169.0-ievent.1",
+    "node-opcua-basic-types": "npm:@waldner-laboreinrichtungen/node-opcua-basic-types@2.169.0-ievent.1",
+    "node-opcua-data-model": "npm:@waldner-laboreinrichtungen/node-opcua-data-model@2.169.0-ievent.1",
+    "node-opcua-nodeid": "npm:@waldner-laboreinrichtungen/node-opcua-nodeid@2.169.0-ievent.1",
+    "node-opcua-nodeset-di": "npm:@waldner-laboreinrichtungen/node-opcua-nodeset-di@2.169.0-ievent.1",
+    "node-opcua-nodeset-ua": "npm:@waldner-laboreinrichtungen/node-opcua-nodeset-ua@2.169.0-ievent.1",
+    "node-opcua-status-code": "npm:@waldner-laboreinrichtungen/node-opcua-status-code@2.169.0-ievent.1",
+    "node-opcua-variant": "npm:@waldner-laboreinrichtungen/node-opcua-variant@2.169.0-ievent.1"
+  },
+  "files": [
+    "dist",
+    "source"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/node-opcua/node-opcua.git"
+  },
+  "keywords": [
+    "OPCUA",
+    "opcua",
+    "m2m",
+    "iot",
+    "opc ua",
+    "internet of things"
+  ],
+  "homepage": "http://node-opcua.github.io/",
+  "gitHead": "8ab3f6f99546f458799452f6dc5b838a37e645f2",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  }
 }
