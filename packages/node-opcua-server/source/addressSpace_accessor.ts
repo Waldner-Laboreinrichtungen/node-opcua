@@ -374,24 +374,19 @@ export class AddressSpaceAccessor implements IAddressSpaceAccessor, IAddressSpac
         } else {
             // c8 ignore next
             if (!obj.historyRead) {
-                // note : Object and View may also support historyRead to provide Event historical data
-                //        todo implement historyRead for Object and View
-                const msg =
-                    " this node doesn't provide historyRead! probably not a UAVariable\n " +
-                    obj.nodeId.toString() +
-                    " " +
-                    obj.browseName.toString() +
-                    "\n" +
-                    "with " +
-                    nodeToRead.toString() +
-                    "\n" +
-                    "HistoryReadDetails " +
-                    historyReadDetails.toString();
-                // c8 ignore next
+                // Node does not expose history — this is legitimate for any node that
+                // has not been wired up via installHistoricalDataNode (variables) or
+                // installHistoricalEventNode (objects). Return a well-formed OPC UA
+                // status instead of throwing so clients get a protocol response.
                 if (doDebug) {
-                    debugLog(chalk.cyan("ServerEngine#_historyReadNode "), chalk.white.bold(msg));
+                    debugLog(
+                        chalk.cyan("ServerEngine#_historyReadNode "),
+                        chalk.white.bold(
+                            ` node ${obj.nodeId.toString()} (${obj.browseName.toString()}) has no historyRead; returning BadHistoryOperationUnsupported`
+                        )
+                    );
                 }
-                throw new Error(msg);
+                return new HistoryReadResult({ statusCode: StatusCodes.BadHistoryOperationUnsupported });
             }
             // check access
             //    BadUserAccessDenied
