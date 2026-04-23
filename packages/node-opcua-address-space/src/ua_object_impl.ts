@@ -11,7 +11,15 @@ import { DataValue, DataValueLike } from "node-opcua-data-value";
 import { getCurrentClock } from "node-opcua-date-time";
 import { NodeId } from "node-opcua-nodeid";
 import { NumericRange } from "node-opcua-numeric-range";
-import { StatusCodes } from "node-opcua-status-code";
+import { CallbackT, StatusCodes } from "node-opcua-status-code";
+import {
+    HistoryReadDetails,
+    HistoryReadResult,
+    ReadRawModifiedDetails,
+    ReadEventDetails,
+    ReadProcessedDetails,
+    ReadAtTimeDetails
+} from "node-opcua-types";
 import { DataType } from "node-opcua-variant";
 import {
     EventTypeLike,
@@ -28,8 +36,10 @@ import {
     IEventData,
     defaultCloneFilter,
     makeDefaultCloneExtraInfo,
-    EventNotifierFlags
+    EventNotifierFlags,
+    ContinuationData
 } from "node-opcua-address-space-base";
+import { SessionContext } from "../source/session_context";
 import { make_errorLog } from "node-opcua-debug";
 
 import { BaseNodeImpl, InternalBaseNodeOptions } from "./base_node_impl";
@@ -240,5 +250,72 @@ export class UAObjectImpl extends BaseNodeImpl implements UAObject {
         const options = new ToStringBuilder();
         UAObject_toString.call(this, options);
         return options.toString();
+    }
+
+    // ---------------------------------------------------------------------------------------------------
+    // History (Events)
+    //
+    // Wired up by AddressSpace#installHistoricalEventNode. Until then `_historyRead` is undefined
+    // and `historyRead` surfaces BadHistoryOperationUnsupported on the wire.
+    // ---------------------------------------------------------------------------------------------------
+
+    public _historyRead?: (
+        context: ISessionContext,
+        historyReadDetails: HistoryReadDetails | ReadRawModifiedDetails | ReadEventDetails | ReadProcessedDetails | ReadAtTimeDetails,
+        indexRange: NumericRange | null,
+        dataEncoding: QualifiedNameLike | null,
+        continuationData: ContinuationData,
+        callback: CallbackT<HistoryReadResult>
+    ) => void;
+
+    public historyRead(
+        context: ISessionContext,
+        historyReadDetails: HistoryReadDetails | ReadRawModifiedDetails | ReadEventDetails | ReadProcessedDetails | ReadAtTimeDetails,
+        indexRange: NumericRange | null,
+        dataEncoding: QualifiedNameLike | null,
+        continuationData: ContinuationData
+    ): Promise<HistoryReadResult>;
+    public historyRead(
+        context: ISessionContext,
+        historyReadDetails: HistoryReadDetails | ReadRawModifiedDetails | ReadEventDetails | ReadProcessedDetails | ReadAtTimeDetails,
+        indexRange: NumericRange | null,
+        dataEncoding: QualifiedNameLike | null,
+        continuationData: ContinuationData,
+        callback: CallbackT<HistoryReadResult>
+    ): void;
+    public historyRead(
+        context: ISessionContext,
+        historyReadDetails: HistoryReadDetails | ReadRawModifiedDetails | ReadEventDetails | ReadProcessedDetails | ReadAtTimeDetails,
+        indexRange: NumericRange | null,
+        dataEncoding: QualifiedNameLike | null,
+        continuationData: ContinuationData,
+        callback?: CallbackT<HistoryReadResult>
+    ): any {
+        assert(context instanceof SessionContext);
+
+        if (!callback) {
+            return new Promise<HistoryReadResult>((resolve, reject) => {
+                this.historyRead(
+                    context,
+                    historyReadDetails,
+                    indexRange,
+                    dataEncoding,
+                    continuationData,
+                    (err, result) => {
+                        if (err) return reject(err);
+                        resolve(result as HistoryReadResult);
+                    }
+                );
+            });
+        }
+
+        if (typeof this._historyRead !== "function") {
+            return callback(
+                null,
+                new HistoryReadResult({ statusCode: StatusCodes.BadHistoryOperationUnsupported })
+            );
+        }
+
+        this._historyRead(context, historyReadDetails, indexRange, dataEncoding, continuationData, callback);
     }
 }
