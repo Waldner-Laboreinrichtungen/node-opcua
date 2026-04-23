@@ -1,8 +1,17 @@
 import { NodeId } from "node-opcua-nodeid";
 import { DataType, Variant, VariantArrayType } from "node-opcua-variant";
-import { Byte, DateTime, Int16, Int32, SByte, UAString, UInt16, UInt32 } from "node-opcua-basic-types";
+import { Byte, CallbackT, DateTime, Int16, Int32, SByte, UAString, UInt16, UInt32 } from "node-opcua-basic-types";
 import { StatusCode } from "node-opcua-status-code";
-import { LocalizedTextLike, NodeClass, QualifiedNameOptions } from "node-opcua-data-model";
+import { LocalizedTextLike, NodeClass, QualifiedNameLike, QualifiedNameOptions } from "node-opcua-data-model";
+import { NumericRange } from "node-opcua-numeric-range";
+import {
+    HistoryReadDetails,
+    HistoryReadResult,
+    ReadRawModifiedDetails,
+    ReadEventDetails,
+    ReadProcessedDetails,
+    ReadAtTimeDetails
+} from "node-opcua-types";
 
 import { ExtensionObject } from "node-opcua-extension-object";
 import { CloneOptions, CloneFilter, CloneExtraInfo } from "./clone_options";
@@ -12,6 +21,7 @@ import { IEventData } from "./i_event_data";
 import { UAEventType } from "./ua_event_type";
 import { UAMethod } from "./ua_method";
 import { EventNotifierFlags } from "./event_notifier_flags";
+import { ISessionContext, ContinuationData } from "./session_context";
 
 export type EventTypeLike = string | NodeId | UAEventType;
 
@@ -188,4 +198,41 @@ export interface UAObject extends BaseNode, EventRaiser, IPropertyAndComponentHo
     setEventNotifier(eventNotifierFlags: EventNotifierFlags): void;
 
     clone(options: CloneOptions, optionalFilter?: CloneFilter, extraInfo?: CloneExtraInfo): UAObject;
+
+    /**
+     * Historical Access for Events.
+     *
+     * Installed by `addressSpace.installHistoricalEventNode(node, { historian })`.
+     * Undefined on plain UAObjects — only present when an event historian has been
+     * wired up. The server-side dispatcher (AddressSpaceAccessor.historyReadNode)
+     * will treat a missing `_historyRead` as `BadHistoryOperationUnsupported`.
+     */
+    _historyRead?(
+        context: ISessionContext,
+        historyReadDetails: HistoryReadDetails | ReadRawModifiedDetails | ReadEventDetails | ReadProcessedDetails | ReadAtTimeDetails,
+        indexRange: NumericRange | null,
+        dataEncoding: QualifiedNameLike | null,
+        continuationData: ContinuationData,
+        callback: CallbackT<HistoryReadResult>
+    ): void;
+
+    /**
+     * Public history read entry point. Overload-compatible with UAVariable.historyRead.
+     * Returns a Promise if no callback is supplied.
+     */
+    historyRead(
+        context: ISessionContext,
+        historyReadDetails: HistoryReadDetails | ReadRawModifiedDetails | ReadEventDetails | ReadProcessedDetails | ReadAtTimeDetails,
+        indexRange: NumericRange | null,
+        dataEncoding: QualifiedNameLike | null,
+        continuationData: ContinuationData
+    ): Promise<HistoryReadResult>;
+    historyRead(
+        context: ISessionContext,
+        historyReadDetails: HistoryReadDetails | ReadRawModifiedDetails | ReadEventDetails | ReadProcessedDetails | ReadAtTimeDetails,
+        indexRange: NumericRange | null,
+        dataEncoding: QualifiedNameLike | null,
+        continuationData: ContinuationData,
+        callback: CallbackT<HistoryReadResult>
+    ): void;
 }

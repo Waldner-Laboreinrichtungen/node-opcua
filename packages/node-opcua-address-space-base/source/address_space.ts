@@ -17,6 +17,7 @@ import { UAObjectType } from "./ua_object_type";
 import { UAReference } from "./ua_reference";
 import { UAReferenceType } from "./ua_reference_type";
 import { IHistoricalDataNodeOptions, UAVariable } from "./ua_variable";
+import { IHistoricalEventNodeOptions } from "./i_event_historian";
 import { UAVariableType } from "./ua_variable_type";
 import { UAView } from "./ua_view";
 
@@ -198,6 +199,11 @@ export interface IAddressSpace {
 
     // -------------- Historizing support
     installHistoricalDataNode(variableNode: UAVariable, options?: IHistoricalDataNodeOptions): void;
+    /**
+     * Install event-history support on a notifier UAObject.
+     * See `i_event_historian.ts` for the IEventHistorian contract.
+     */
+    installHistoricalEventNode(node: UAObject, options?: IHistoricalEventNodeOptions): void;
 
     // -------------- Shutdown helpers
     /**
