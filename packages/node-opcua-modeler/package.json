@@ -1,61 +1,65 @@
 {
-    "name": "node-opcua-modeler",
-    "version": "2.169.0",
-    "description": "pure nodejs OPCUA SDK - module modeler",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "scripts": {
-        "build": "tsc -b",
-        "clean": "npx rimraf -g node_modules dist *.tsbuildinfo",
-        "test": "mocha",
-        "test:check": "tsc --noEmit -p test/tsconfig.json"
-    },
-    "author": "Etienne Rossignon",
-    "license": "MIT",
-    "dependencies": {
-        "cli-table3": "0.6.5",
-        "csv-parse": "6.2.1",
-        "node-opcua-address-space": "2.169.0",
-        "node-opcua-assert": "2.164.0",
-        "node-opcua-basic-types": "2.169.0",
-        "node-opcua-client-dynamic-extension-object": "2.169.0",
-        "node-opcua-constants": "2.157.0",
-        "node-opcua-data-model": "2.169.0",
-        "node-opcua-debug": "2.168.0",
-        "node-opcua-factory": "2.169.0",
-        "node-opcua-nodeid": "2.169.0",
-        "node-opcua-nodesets": "2.163.1",
-        "node-opcua-numeric-range": "2.169.0",
-        "node-opcua-schemas": "2.169.0",
-        "node-opcua-service-translate-browse-path": "2.169.0",
-        "node-opcua-status-code": "2.169.0",
-        "node-opcua-types": "2.169.0",
-        "node-opcua-variant": "2.169.0"
-    },
-    "devDependencies": {
-        "node-opcua-address-space-base": "2.169.0",
-        "node-opcua-leak-detector": "2.169.0"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/node-opcua/node-opcua.git"
-    },
-    "keywords": [
-        "OPCUA",
-        "opcua",
-        "m2m",
-        "iot",
-        "opc ua",
-        "internet of things"
-    ],
-    "homepage": "http://node-opcua.github.io/",
-    "gitHead": "50cfa07779d4c07b299176ac9c27527fcd97d079",
-    "files": [
-        "dist",
-        "distNodeJS",
-        "source",
-        "nodeJS.d.ts",
-        "nodeJS.js",
-        "source_nodejs"
-    ]
+  "name": "@waldner-laboreinrichtungen/node-opcua-modeler",
+  "version": "2.169.0-ievent.1",
+  "description": "pure nodejs OPCUA SDK - module modeler",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "npx rimraf -g node_modules dist *.tsbuildinfo",
+    "test": "mocha",
+    "test:check": "tsc --noEmit -p test/tsconfig.json"
+  },
+  "author": "Etienne Rossignon",
+  "license": "MIT",
+  "dependencies": {
+    "cli-table3": "0.6.5",
+    "csv-parse": "6.2.1",
+    "node-opcua-address-space": "npm:@waldner-laboreinrichtungen/node-opcua-address-space@2.169.0-ievent.1",
+    "node-opcua-assert": "npm:@waldner-laboreinrichtungen/node-opcua-assert@2.169.0-ievent.1",
+    "node-opcua-basic-types": "npm:@waldner-laboreinrichtungen/node-opcua-basic-types@2.169.0-ievent.1",
+    "node-opcua-client-dynamic-extension-object": "npm:@waldner-laboreinrichtungen/node-opcua-client-dynamic-extension-object@2.169.0-ievent.1",
+    "node-opcua-constants": "npm:@waldner-laboreinrichtungen/node-opcua-constants@2.169.0-ievent.1",
+    "node-opcua-data-model": "npm:@waldner-laboreinrichtungen/node-opcua-data-model@2.169.0-ievent.1",
+    "node-opcua-debug": "npm:@waldner-laboreinrichtungen/node-opcua-debug@2.169.0-ievent.1",
+    "node-opcua-factory": "npm:@waldner-laboreinrichtungen/node-opcua-factory@2.169.0-ievent.1",
+    "node-opcua-nodeid": "npm:@waldner-laboreinrichtungen/node-opcua-nodeid@2.169.0-ievent.1",
+    "node-opcua-nodesets": "npm:@waldner-laboreinrichtungen/node-opcua-nodesets@2.169.0-ievent.1",
+    "node-opcua-numeric-range": "npm:@waldner-laboreinrichtungen/node-opcua-numeric-range@2.169.0-ievent.1",
+    "node-opcua-schemas": "npm:@waldner-laboreinrichtungen/node-opcua-schemas@2.169.0-ievent.1",
+    "node-opcua-service-translate-browse-path": "npm:@waldner-laboreinrichtungen/node-opcua-service-translate-browse-path@2.169.0-ievent.1",
+    "node-opcua-status-code": "npm:@waldner-laboreinrichtungen/node-opcua-status-code@2.169.0-ievent.1",
+    "node-opcua-types": "npm:@waldner-laboreinrichtungen/node-opcua-types@2.169.0-ievent.1",
+    "node-opcua-variant": "npm:@waldner-laboreinrichtungen/node-opcua-variant@2.169.0-ievent.1"
+  },
+  "devDependencies": {
+    "node-opcua-address-space-base": "npm:@waldner-laboreinrichtungen/node-opcua-address-space-base@2.169.0-ievent.1",
+    "node-opcua-leak-detector": "npm:@waldner-laboreinrichtungen/node-opcua-leak-detector@2.169.0-ievent.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/node-opcua/node-opcua.git"
+  },
+  "keywords": [
+    "OPCUA",
+    "opcua",
+    "m2m",
+    "iot",
+    "opc ua",
+    "internet of things"
+  ],
+  "homepage": "http://node-opcua.github.io/",
+  "gitHead": "b9468669ca74f90123ed0cac7b08a550ad3643b4",
+  "files": [
+    "dist",
+    "distNodeJS",
+    "source",
+    "nodeJS.d.ts",
+    "nodeJS.js",
+    "source_nodejs"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  }
 }

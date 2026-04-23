@@ -1,37 +1,41 @@
 {
-    "name": "node-opcua-packet-assembler",
-    "version": "2.168.0",
-    "description": "pure nodejs OPCUA SDK - module packet-assembler",
-    "main": "./dist/index.js",
-    "types": "./dist/index.d.ts",
-    "scripts": {
-        "build": "tsc -b",
-        "clean": "npx rimraf -g node_modules dist *.tsbuildinfo",
-        "test": "mocha",
-        "test:check:not-ready": "tsc --noEmit -p test/tsconfig.json"
-    },
-    "author": "Etienne Rossignon",
-    "license": "MIT",
-    "dependencies": {
-        "node-opcua-assert": "2.164.0",
-        "node-opcua-debug": "2.168.0"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/node-opcua/node-opcua.git"
-    },
-    "keywords": [
-        "OPCUA",
-        "opcua",
-        "m2m",
-        "iot",
-        "opc ua",
-        "internet of things"
-    ],
-    "homepage": "http://node-opcua.github.io/",
-    "gitHead": "50cfa07779d4c07b299176ac9c27527fcd97d079",
-    "files": [
-        "dist",
-        "source"
-    ]
+  "name": "@waldner-laboreinrichtungen/node-opcua-packet-assembler",
+  "version": "2.169.0-ievent.1",
+  "description": "pure nodejs OPCUA SDK - module packet-assembler",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "npx rimraf -g node_modules dist *.tsbuildinfo",
+    "test": "mocha",
+    "test:check:not-ready": "tsc --noEmit -p test/tsconfig.json"
+  },
+  "author": "Etienne Rossignon",
+  "license": "MIT",
+  "dependencies": {
+    "node-opcua-assert": "npm:@waldner-laboreinrichtungen/node-opcua-assert@2.169.0-ievent.1",
+    "node-opcua-debug": "npm:@waldner-laboreinrichtungen/node-opcua-debug@2.169.0-ievent.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/node-opcua/node-opcua.git"
+  },
+  "keywords": [
+    "OPCUA",
+    "opcua",
+    "m2m",
+    "iot",
+    "opc ua",
+    "internet of things"
+  ],
+  "homepage": "http://node-opcua.github.io/",
+  "gitHead": "b9468669ca74f90123ed0cac7b08a550ad3643b4",
+  "files": [
+    "dist",
+    "source"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  }
 }

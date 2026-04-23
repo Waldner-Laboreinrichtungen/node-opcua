@@ -1,40 +1,44 @@
 {
-    "name": "node-opcua-units",
-    "version": "2.169.0",
-    "description": "pure nodejs OPCUA SDK - module units",
-    "main": "./dist/index.js",
-    "types": "./dist/index.d.ts",
-    "scripts": {
-        "build": "tsc -b",
-        "generate:units": "tsx tools/build.ts && npm run format",
-        "lint": "eslint source test",
-        "format": "prettier --write source test",
-        "test": "mocha",
-        "test:check": "tsc --noEmit -p test/tsconfig.json",
-        "clean": "npx rimraf -g node_modules dist *.tsbuildinfo"
-    },
-    "dependencies": {
-        "node-opcua-data-access": "2.169.0",
-        "node-opcua-types": "2.169.0"
-    },
-    "author": "Etienne Rossignon",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/node-opcua/node-opcua.git"
-    },
-    "keywords": [
-        "OPCUA",
-        "opcua",
-        "m2m",
-        "iot",
-        "opc ua",
-        "internet of things"
-    ],
-    "homepage": "http://node-opcua.github.io/",
-    "gitHead": "50cfa07779d4c07b299176ac9c27527fcd97d079",
-    "files": [
-        "dist",
-        "source"
-    ]
+  "name": "@waldner-laboreinrichtungen/node-opcua-units",
+  "version": "2.169.0-ievent.1",
+  "description": "pure nodejs OPCUA SDK - module units",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -b",
+    "generate:units": "tsx tools/build.ts && npm run format",
+    "lint": "eslint source test",
+    "format": "prettier --write source test",
+    "test": "mocha",
+    "test:check": "tsc --noEmit -p test/tsconfig.json",
+    "clean": "npx rimraf -g node_modules dist *.tsbuildinfo"
+  },
+  "dependencies": {
+    "node-opcua-data-access": "npm:@waldner-laboreinrichtungen/node-opcua-data-access@2.169.0-ievent.1",
+    "node-opcua-types": "npm:@waldner-laboreinrichtungen/node-opcua-types@2.169.0-ievent.1"
+  },
+  "author": "Etienne Rossignon",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/node-opcua/node-opcua.git"
+  },
+  "keywords": [
+    "OPCUA",
+    "opcua",
+    "m2m",
+    "iot",
+    "opc ua",
+    "internet of things"
+  ],
+  "homepage": "http://node-opcua.github.io/",
+  "gitHead": "b9468669ca74f90123ed0cac7b08a550ad3643b4",
+  "files": [
+    "dist",
+    "source"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  }
 }
