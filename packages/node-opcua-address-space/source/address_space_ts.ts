@@ -143,6 +143,7 @@ export interface AddressSpace extends IAddressSpace {
 }
 export class AddressSpace {
     public static historizerFactory: any;
+    public static eventHistorianFactory: any;
 
     public static create(): AddressSpace {
         return new AddressSpace() as AddressSpace;

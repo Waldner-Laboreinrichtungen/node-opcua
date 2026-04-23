@@ -9,6 +9,7 @@ import type {
     BaseNode,
     IEventData,
     IHistoricalDataNodeOptions,
+    IHistoricalEventNodeOptions,
     ISessionContext,
     MethodCallInterceptor,
     RaiseEventData,
@@ -69,6 +70,9 @@ import { EventData } from "./event_data";
 import {
     AddressSpace_installHistoricalDataNode
 } from "./historical_access/address_space_historical_data_node";
+import {
+    AddressSpace_installHistoricalEventNode
+} from "./historical_access/address_space_historical_event_node";
 import { isNonEmptyQualifiedName, NamespaceImpl } from "./namespace_impl";
 import type { NamespacePrivate } from "./namespace_private";
 import { ReferenceImpl } from "./reference_impl";
@@ -172,6 +176,7 @@ export class AddressSpace implements AddressSpacePrivate {
 
     public static isNonEmptyQualifiedName = isNonEmptyQualifiedName;
     public static historizerFactory?: any;
+    public static eventHistorianFactory?: any;
 
     public static create(): AddressSpace {
         return new AddressSpace();
@@ -186,6 +191,7 @@ export class AddressSpace implements AddressSpacePrivate {
     public suspendBackReference = false;
     public isFrugal = false;
     public historizingNodes: Set<UAVariable> = new Set();
+    public historizingEventNodes: Set<UAObject> = new Set();
     public _condition_refresh_in_progress = false;
 
     public readonly isNodeIdString = isNodeIdString;
@@ -1386,6 +1392,18 @@ export class AddressSpace implements AddressSpacePrivate {
      */
     public installHistoricalDataNode(node: UAVariable, options?: IHistoricalDataNodeOptions): void {
         AddressSpace_installHistoricalDataNode.call(this, node as UAVariableImpl, options);
+    }
+
+    /**
+     * Install event-history on a notifier UAObject.
+     *
+     * After this call, `session.historyRead(ReadEventDetails)` against the node is
+     * dispatched to the configured `IEventHistorian`. See
+     * `packages/node-opcua-address-space-base/source/i_event_historian.ts` for the interface,
+     * and `src/historical_access/address_space_historical_event_node.ts` for the implementation.
+     */
+    public installHistoricalEventNode(node: UAObject, options?: IHistoricalEventNodeOptions): void {
+        AddressSpace_installHistoricalEventNode.call(this, node, options);
     }
 
     // -- Alarms & Conditions  -----------------------------------------------------------------------------------------
