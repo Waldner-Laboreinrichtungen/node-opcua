@@ -1,6 +1,6 @@
 {
   "name": "@waldner-laboreinrichtungen/node-opcua-model",
-  "version": "2.169.0-ievent.1",
+  "version": "2.169.0-ievent.2",
   "description": "pure nodejs OPCUA SDK - module model",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -13,14 +13,14 @@
   "author": "Etienne Rossignon",
   "license": "MIT",
   "dependencies": {
-    "node-opcua-client-dynamic-extension-object": "npm:@waldner-laboreinrichtungen/node-opcua-client-dynamic-extension-object@2.169.0-ievent.1",
-    "node-opcua-pseudo-session": "npm:@waldner-laboreinrichtungen/node-opcua-pseudo-session@2.169.0-ievent.1"
+    "node-opcua-client-dynamic-extension-object": "npm:@waldner-laboreinrichtungen/node-opcua-client-dynamic-extension-object@2.169.0-ievent.2",
+    "node-opcua-pseudo-session": "npm:@waldner-laboreinrichtungen/node-opcua-pseudo-session@2.169.0-ievent.2"
   },
   "devDependencies": {
-    "node-opcua-address-space": "npm:@waldner-laboreinrichtungen/node-opcua-address-space@2.169.0-ievent.1",
-    "node-opcua-assert": "npm:@waldner-laboreinrichtungen/node-opcua-assert@2.169.0-ievent.1",
-    "node-opcua-leak-detector": "npm:@waldner-laboreinrichtungen/node-opcua-leak-detector@2.169.0-ievent.1",
-    "node-opcua-nodesets": "npm:@waldner-laboreinrichtungen/node-opcua-nodesets@2.169.0-ievent.1"
+    "node-opcua-address-space": "npm:@waldner-laboreinrichtungen/node-opcua-address-space@2.169.0-ievent.2",
+    "node-opcua-assert": "npm:@waldner-laboreinrichtungen/node-opcua-assert@2.169.0-ievent.2",
+    "node-opcua-leak-detector": "npm:@waldner-laboreinrichtungen/node-opcua-leak-detector@2.169.0-ievent.2",
+    "node-opcua-nodesets": "npm:@waldner-laboreinrichtungen/node-opcua-nodesets@2.169.0-ievent.2"
   },
   "repository": {
     "type": "git",

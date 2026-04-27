@@ -1,6 +1,6 @@
 {
   "name": "@waldner-laboreinrichtungen/node-opcua-enum",
-  "version": "2.169.0-ievent.1",
+  "version": "2.169.0-ievent.2",
   "description": "pure nodejs OPCUA SDK - module enum",
   "scripts": {
     "build": "tsc -b",
@@ -12,7 +12,7 @@
   "@types": "./dist/index.d.ts",
   "devDependencies": {
     "enum": "3.0.4",
-    "node-opcua-benchmarker": "npm:@waldner-laboreinrichtungen/node-opcua-benchmarker@2.169.0-ievent.1"
+    "node-opcua-benchmarker": "npm:@waldner-laboreinrichtungen/node-opcua-benchmarker@2.169.0-ievent.2"
   },
   "author": "Etienne Rossignon",
   "license": "MIT",

@@ -1,6 +1,6 @@
 {
   "name": "@waldner-laboreinrichtungen/node-opcua-packet-analyzer",
-  "version": "2.169.0-ievent.1",
+  "version": "2.169.0-ievent.2",
   "description": "pure nodejs OPCUA SDK - module packet-analyzer",
   "main": "./dist/source/index.js",
   "types": "./dist/source/index.d.ts",
@@ -15,16 +15,16 @@
   "license": "MIT",
   "dependencies": {
     "chalk": "4.1.2",
-    "node-opcua-assert": "npm:@waldner-laboreinrichtungen/node-opcua-assert@2.169.0-ievent.1",
-    "node-opcua-basic-types": "npm:@waldner-laboreinrichtungen/node-opcua-basic-types@2.169.0-ievent.1",
-    "node-opcua-binary-stream": "npm:@waldner-laboreinrichtungen/node-opcua-binary-stream@2.169.0-ievent.1",
-    "node-opcua-debug": "npm:@waldner-laboreinrichtungen/node-opcua-debug@2.169.0-ievent.1",
-    "node-opcua-factory": "npm:@waldner-laboreinrichtungen/node-opcua-factory@2.169.0-ievent.1",
-    "node-opcua-utils": "npm:@waldner-laboreinrichtungen/node-opcua-utils@2.169.0-ievent.1"
+    "node-opcua-assert": "npm:@waldner-laboreinrichtungen/node-opcua-assert@2.169.0-ievent.2",
+    "node-opcua-basic-types": "npm:@waldner-laboreinrichtungen/node-opcua-basic-types@2.169.0-ievent.2",
+    "node-opcua-binary-stream": "npm:@waldner-laboreinrichtungen/node-opcua-binary-stream@2.169.0-ievent.2",
+    "node-opcua-debug": "npm:@waldner-laboreinrichtungen/node-opcua-debug@2.169.0-ievent.2",
+    "node-opcua-factory": "npm:@waldner-laboreinrichtungen/node-opcua-factory@2.169.0-ievent.2",
+    "node-opcua-utils": "npm:@waldner-laboreinrichtungen/node-opcua-utils@2.169.0-ievent.2"
   },
   "devDependencies": {
-    "node-opcua-nodeid": "npm:@waldner-laboreinrichtungen/node-opcua-nodeid@2.169.0-ievent.1",
-    "node-opcua-test-helpers": "npm:@waldner-laboreinrichtungen/node-opcua-test-helpers@2.169.0-ievent.1"
+    "node-opcua-nodeid": "npm:@waldner-laboreinrichtungen/node-opcua-nodeid@2.169.0-ievent.2",
+    "node-opcua-test-helpers": "npm:@waldner-laboreinrichtungen/node-opcua-test-helpers@2.169.0-ievent.2"
   },
   "repository": {
     "type": "git",

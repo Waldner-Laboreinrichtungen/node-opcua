@@ -1,6 +1,6 @@
 {
   "name": "@waldner-laboreinrichtungen/node-opcua-extension-object",
-  "version": "2.169.0-ievent.1",
+  "version": "2.169.0-ievent.2",
   "description": "pure nodejs OPCUA SDK - module extension-object",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -13,11 +13,11 @@
   },
   "dependencies": {
     "chalk": "4.1.2",
-    "node-opcua-basic-types": "npm:@waldner-laboreinrichtungen/node-opcua-basic-types@2.169.0-ievent.1",
-    "node-opcua-binary-stream": "npm:@waldner-laboreinrichtungen/node-opcua-binary-stream@2.169.0-ievent.1",
-    "node-opcua-debug": "npm:@waldner-laboreinrichtungen/node-opcua-debug@2.169.0-ievent.1",
-    "node-opcua-factory": "npm:@waldner-laboreinrichtungen/node-opcua-factory@2.169.0-ievent.1",
-    "node-opcua-nodeid": "npm:@waldner-laboreinrichtungen/node-opcua-nodeid@2.169.0-ievent.1"
+    "node-opcua-basic-types": "npm:@waldner-laboreinrichtungen/node-opcua-basic-types@2.169.0-ievent.2",
+    "node-opcua-binary-stream": "npm:@waldner-laboreinrichtungen/node-opcua-binary-stream@2.169.0-ievent.2",
+    "node-opcua-debug": "npm:@waldner-laboreinrichtungen/node-opcua-debug@2.169.0-ievent.2",
+    "node-opcua-factory": "npm:@waldner-laboreinrichtungen/node-opcua-factory@2.169.0-ievent.2",
+    "node-opcua-nodeid": "npm:@waldner-laboreinrichtungen/node-opcua-nodeid@2.169.0-ievent.2"
   },
   "author": "Etienne Rossignon",
   "license": "MIT",

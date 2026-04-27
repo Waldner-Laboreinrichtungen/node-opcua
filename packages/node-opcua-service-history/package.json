@@ -1,6 +1,6 @@
 {
   "name": "@waldner-laboreinrichtungen/node-opcua-service-history",
-  "version": "2.169.0-ievent.1",
+  "version": "2.169.0-ievent.2",
   "description": "pure nodejs OPCUA SDK - module service-history",
   "scripts": {
     "test": "mocha",
@@ -10,13 +10,13 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "dependencies": {
-    "node-opcua-assert": "npm:@waldner-laboreinrichtungen/node-opcua-assert@2.169.0-ievent.1",
-    "node-opcua-data-value": "npm:@waldner-laboreinrichtungen/node-opcua-data-value@2.169.0-ievent.1",
-    "node-opcua-types": "npm:@waldner-laboreinrichtungen/node-opcua-types@2.169.0-ievent.1"
+    "node-opcua-assert": "npm:@waldner-laboreinrichtungen/node-opcua-assert@2.169.0-ievent.2",
+    "node-opcua-data-value": "npm:@waldner-laboreinrichtungen/node-opcua-data-value@2.169.0-ievent.2",
+    "node-opcua-types": "npm:@waldner-laboreinrichtungen/node-opcua-types@2.169.0-ievent.2"
   },
   "devDependencies": {
-    "node-opcua-packet-analyzer": "npm:@waldner-laboreinrichtungen/node-opcua-packet-analyzer@2.169.0-ievent.1",
-    "node-opcua-service-read": "npm:@waldner-laboreinrichtungen/node-opcua-service-read@2.169.0-ievent.1"
+    "node-opcua-packet-analyzer": "npm:@waldner-laboreinrichtungen/node-opcua-packet-analyzer@2.169.0-ievent.2",
+    "node-opcua-service-read": "npm:@waldner-laboreinrichtungen/node-opcua-service-read@2.169.0-ievent.2"
   },
   "author": "Etienne Rossignon",
   "license": "MIT",

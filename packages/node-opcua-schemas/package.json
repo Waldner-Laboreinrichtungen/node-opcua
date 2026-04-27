@@ -1,6 +1,6 @@
 {
   "name": "@waldner-laboreinrichtungen/node-opcua-schemas",
-  "version": "2.169.0-ievent.1",
+  "version": "2.169.0-ievent.2",
   "description": "pure nodejs OPCUA SDK - module schemas",
   "main": "dist/source/index.js",
   "types": "dist/source/index.d.ts",
@@ -14,19 +14,19 @@
   },
   "dependencies": {
     "chalk": "4.1.2",
-    "node-opcua-assert": "npm:@waldner-laboreinrichtungen/node-opcua-assert@2.169.0-ievent.1",
-    "node-opcua-binary-stream": "npm:@waldner-laboreinrichtungen/node-opcua-binary-stream@2.169.0-ievent.1",
-    "node-opcua-debug": "npm:@waldner-laboreinrichtungen/node-opcua-debug@2.169.0-ievent.1",
-    "node-opcua-extension-object": "npm:@waldner-laboreinrichtungen/node-opcua-extension-object@2.169.0-ievent.1",
-    "node-opcua-factory": "npm:@waldner-laboreinrichtungen/node-opcua-factory@2.169.0-ievent.1",
-    "node-opcua-nodeid": "npm:@waldner-laboreinrichtungen/node-opcua-nodeid@2.169.0-ievent.1",
-    "node-opcua-variant": "npm:@waldner-laboreinrichtungen/node-opcua-variant@2.169.0-ievent.1",
-    "node-opcua-xml2json": "npm:@waldner-laboreinrichtungen/node-opcua-xml2json@2.169.0-ievent.1"
+    "node-opcua-assert": "npm:@waldner-laboreinrichtungen/node-opcua-assert@2.169.0-ievent.2",
+    "node-opcua-binary-stream": "npm:@waldner-laboreinrichtungen/node-opcua-binary-stream@2.169.0-ievent.2",
+    "node-opcua-debug": "npm:@waldner-laboreinrichtungen/node-opcua-debug@2.169.0-ievent.2",
+    "node-opcua-extension-object": "npm:@waldner-laboreinrichtungen/node-opcua-extension-object@2.169.0-ievent.2",
+    "node-opcua-factory": "npm:@waldner-laboreinrichtungen/node-opcua-factory@2.169.0-ievent.2",
+    "node-opcua-nodeid": "npm:@waldner-laboreinrichtungen/node-opcua-nodeid@2.169.0-ievent.2",
+    "node-opcua-variant": "npm:@waldner-laboreinrichtungen/node-opcua-variant@2.169.0-ievent.2",
+    "node-opcua-xml2json": "npm:@waldner-laboreinrichtungen/node-opcua-xml2json@2.169.0-ievent.2"
   },
   "devDependencies": {
-    "node-opcua-data-model": "npm:@waldner-laboreinrichtungen/node-opcua-data-model@2.169.0-ievent.1",
-    "node-opcua-packet-analyzer": "npm:@waldner-laboreinrichtungen/node-opcua-packet-analyzer@2.169.0-ievent.1",
-    "node-opcua-utils": "npm:@waldner-laboreinrichtungen/node-opcua-utils@2.169.0-ievent.1"
+    "node-opcua-data-model": "npm:@waldner-laboreinrichtungen/node-opcua-data-model@2.169.0-ievent.2",
+    "node-opcua-packet-analyzer": "npm:@waldner-laboreinrichtungen/node-opcua-packet-analyzer@2.169.0-ievent.2",
+    "node-opcua-utils": "npm:@waldner-laboreinrichtungen/node-opcua-utils@2.169.0-ievent.2"
   },
   "devPeerDependencies": {
     "node-opcua": "2.156.0"

@@ -2,7 +2,7 @@
   "name": "@waldner-laboreinrichtungen/node-opcua-data-access",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "version": "2.169.0-ievent.1",
+  "version": "2.169.0-ievent.2",
   "description": "pure nodejs OPCUA SDK - module data-access",
   "scripts": {
     "build": "tsc -b",
@@ -12,11 +12,11 @@
     "format": "prettier --write source test"
   },
   "dependencies": {
-    "node-opcua-data-model": "npm:@waldner-laboreinrichtungen/node-opcua-data-model@2.169.0-ievent.1",
-    "node-opcua-types": "npm:@waldner-laboreinrichtungen/node-opcua-types@2.169.0-ievent.1"
+    "node-opcua-data-model": "npm:@waldner-laboreinrichtungen/node-opcua-data-model@2.169.0-ievent.2",
+    "node-opcua-types": "npm:@waldner-laboreinrichtungen/node-opcua-types@2.169.0-ievent.2"
   },
   "devDependencies": {
-    "node-opcua-assert": "npm:@waldner-laboreinrichtungen/node-opcua-assert@2.169.0-ievent.1"
+    "node-opcua-assert": "npm:@waldner-laboreinrichtungen/node-opcua-assert@2.169.0-ievent.2"
   },
   "author": "Etienne Rossignon",
   "license": "MIT",

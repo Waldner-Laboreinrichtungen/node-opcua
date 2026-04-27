@@ -1,6 +1,6 @@
 {
   "name": "@waldner-laboreinrichtungen/node-opcua-object-registry",
-  "version": "2.169.0-ievent.1",
+  "version": "2.169.0-ievent.2",
   "description": "pure nodejs OPCUA SDK - module object-registry",
   "main": "./dist/index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "author": "Etienne Rossignon",
   "license": "MIT",
   "dependencies": {
-    "node-opcua-debug": "npm:@waldner-laboreinrichtungen/node-opcua-debug@2.169.0-ievent.1"
+    "node-opcua-debug": "npm:@waldner-laboreinrichtungen/node-opcua-debug@2.169.0-ievent.2"
   },
   "repository": {
     "type": "git",

@@ -1,6 +1,6 @@
 {
   "name": "@waldner-laboreinrichtungen/node-opcua-data-model",
-  "version": "2.169.0-ievent.1",
+  "version": "2.169.0-ievent.2",
   "description": "pure nodejs OPCUA SDK - module data-model",
   "scripts": {
     "build": "tsc -b",
@@ -14,16 +14,16 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "dependencies": {
-    "node-opcua-assert": "npm:@waldner-laboreinrichtungen/node-opcua-assert@2.169.0-ievent.1",
-    "node-opcua-basic-types": "npm:@waldner-laboreinrichtungen/node-opcua-basic-types@2.169.0-ievent.1",
-    "node-opcua-binary-stream": "npm:@waldner-laboreinrichtungen/node-opcua-binary-stream@2.169.0-ievent.1",
-    "node-opcua-enum": "npm:@waldner-laboreinrichtungen/node-opcua-enum@2.169.0-ievent.1",
-    "node-opcua-factory": "npm:@waldner-laboreinrichtungen/node-opcua-factory@2.169.0-ievent.1",
-    "node-opcua-nodeid": "npm:@waldner-laboreinrichtungen/node-opcua-nodeid@2.169.0-ievent.1",
-    "node-opcua-status-code": "npm:@waldner-laboreinrichtungen/node-opcua-status-code@2.169.0-ievent.1"
+    "node-opcua-assert": "npm:@waldner-laboreinrichtungen/node-opcua-assert@2.169.0-ievent.2",
+    "node-opcua-basic-types": "npm:@waldner-laboreinrichtungen/node-opcua-basic-types@2.169.0-ievent.2",
+    "node-opcua-binary-stream": "npm:@waldner-laboreinrichtungen/node-opcua-binary-stream@2.169.0-ievent.2",
+    "node-opcua-enum": "npm:@waldner-laboreinrichtungen/node-opcua-enum@2.169.0-ievent.2",
+    "node-opcua-factory": "npm:@waldner-laboreinrichtungen/node-opcua-factory@2.169.0-ievent.2",
+    "node-opcua-nodeid": "npm:@waldner-laboreinrichtungen/node-opcua-nodeid@2.169.0-ievent.2",
+    "node-opcua-status-code": "npm:@waldner-laboreinrichtungen/node-opcua-status-code@2.169.0-ievent.2"
   },
   "devDependencies": {
-    "node-opcua-packet-analyzer": "npm:@waldner-laboreinrichtungen/node-opcua-packet-analyzer@2.169.0-ievent.1"
+    "node-opcua-packet-analyzer": "npm:@waldner-laboreinrichtungen/node-opcua-packet-analyzer@2.169.0-ievent.2"
   },
   "author": "Etienne Rossignon",
   "license": "MIT",

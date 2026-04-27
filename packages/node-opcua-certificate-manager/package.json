@@ -1,6 +1,6 @@
 {
   "name": "@waldner-laboreinrichtungen/node-opcua-certificate-manager",
-  "version": "2.169.0-ievent.1",
+  "version": "2.169.0-ievent.2",
   "description": "pure nodejs OPCUA SDK - module certificate-manager",
   "scripts": {
     "clean": "npx rimraf -g node_modules dist *.tsbuildinfo certificates",
@@ -20,16 +20,16 @@
   },
   "dependencies": {
     "env-paths": "2.2.1",
-    "node-opcua-assert": "npm:@waldner-laboreinrichtungen/node-opcua-assert@2.169.0-ievent.1",
+    "node-opcua-assert": "npm:@waldner-laboreinrichtungen/node-opcua-assert@2.169.0-ievent.2",
     "node-opcua-crypto": "5.3.5",
-    "node-opcua-debug": "npm:@waldner-laboreinrichtungen/node-opcua-debug@2.169.0-ievent.1",
-    "node-opcua-object-registry": "npm:@waldner-laboreinrichtungen/node-opcua-object-registry@2.169.0-ievent.1",
+    "node-opcua-debug": "npm:@waldner-laboreinrichtungen/node-opcua-debug@2.169.0-ievent.2",
+    "node-opcua-object-registry": "npm:@waldner-laboreinrichtungen/node-opcua-object-registry@2.169.0-ievent.2",
     "node-opcua-pki": "6.13.0",
-    "node-opcua-status-code": "npm:@waldner-laboreinrichtungen/node-opcua-status-code@2.169.0-ievent.1",
+    "node-opcua-status-code": "npm:@waldner-laboreinrichtungen/node-opcua-status-code@2.169.0-ievent.2",
     "thenify-ex": "4.4.0"
   },
   "devDependencies": {
-    "node-opcua-leak-detector": "npm:@waldner-laboreinrichtungen/node-opcua-leak-detector@2.169.0-ievent.1"
+    "node-opcua-leak-detector": "npm:@waldner-laboreinrichtungen/node-opcua-leak-detector@2.169.0-ievent.2"
   },
   "eslintConfig": {
     "env": {

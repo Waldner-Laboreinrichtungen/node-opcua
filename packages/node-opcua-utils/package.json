@@ -1,6 +1,6 @@
 {
   "name": "@waldner-laboreinrichtungen/node-opcua-utils",
-  "version": "2.169.0-ievent.1",
+  "version": "2.169.0-ievent.2",
   "description": "pure nodejs OPCUA SDK - module utils",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "chalk": "4.1.2",
-    "node-opcua-assert": "npm:@waldner-laboreinrichtungen/node-opcua-assert@2.169.0-ievent.1"
+    "node-opcua-assert": "npm:@waldner-laboreinrichtungen/node-opcua-assert@2.169.0-ievent.2"
   },
   "author": "Etienne Rossignon",
   "license": "MIT",
@@ -36,7 +36,7 @@
     "source"
   ],
   "devDependencies": {
-    "node-opcua-leak-detector": "npm:@waldner-laboreinrichtungen/node-opcua-leak-detector@2.169.0-ievent.1"
+    "node-opcua-leak-detector": "npm:@waldner-laboreinrichtungen/node-opcua-leak-detector@2.169.0-ievent.2"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com",

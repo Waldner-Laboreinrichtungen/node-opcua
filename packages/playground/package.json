@@ -1,6 +1,6 @@
 {
   "name": "@waldner-laboreinrichtungen/playground",
-  "version": "2.169.0-ievent.1",
+  "version": "2.169.0-ievent.2",
   "description": "pure nodejs OPCUA SDK - module playground",
   "main": "sample1.js",
   "private": true,
@@ -10,10 +10,10 @@
   "dependencies": {
     "bcryptjs": "3.0.3",
     "chalk": "4.1.2",
-    "node-opcua": "npm:@waldner-laboreinrichtungen/node-opcua@2.169.0-ievent.1",
-    "node-opcua-client": "npm:@waldner-laboreinrichtungen/node-opcua-client@2.169.0-ievent.1",
-    "node-opcua-debug": "npm:@waldner-laboreinrichtungen/node-opcua-debug@2.169.0-ievent.1",
-    "node-opcua-modeler": "npm:@waldner-laboreinrichtungen/node-opcua-modeler@2.169.0-ievent.1",
+    "node-opcua": "npm:@waldner-laboreinrichtungen/node-opcua@2.169.0-ievent.2",
+    "node-opcua-client": "npm:@waldner-laboreinrichtungen/node-opcua-client@2.169.0-ievent.2",
+    "node-opcua-debug": "npm:@waldner-laboreinrichtungen/node-opcua-debug@2.169.0-ievent.2",
+    "node-opcua-modeler": "npm:@waldner-laboreinrichtungen/node-opcua-modeler@2.169.0-ievent.2",
     "readline": "*",
     "winston": "*"
   },

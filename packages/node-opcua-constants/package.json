@@ -1,6 +1,6 @@
 {
   "name": "@waldner-laboreinrichtungen/node-opcua-constants",
-  "version": "2.169.0-ievent.1",
+  "version": "2.169.0-ievent.2",
   "description": "pure nodejs OPCUA SDK - module constants",
   "scripts": {
     "clean": "npx rimraf -g node_modules dist *.tsbuildinfo",

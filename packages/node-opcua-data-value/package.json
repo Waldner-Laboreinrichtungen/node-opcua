@@ -2,7 +2,7 @@
   "name": "@waldner-laboreinrichtungen/node-opcua-data-value",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "version": "2.169.0-ievent.1",
+  "version": "2.169.0-ievent.2",
   "description": "pure nodejs OPCUA SDK - module data-value",
   "scripts": {
     "build": "tsc -b",
@@ -12,21 +12,21 @@
     "clean": "npx rimraf -g node_modules dist *.tsbuildinfo"
   },
   "dependencies": {
-    "node-opcua-assert": "npm:@waldner-laboreinrichtungen/node-opcua-assert@2.169.0-ievent.1",
-    "node-opcua-basic-types": "npm:@waldner-laboreinrichtungen/node-opcua-basic-types@2.169.0-ievent.1",
-    "node-opcua-binary-stream": "npm:@waldner-laboreinrichtungen/node-opcua-binary-stream@2.169.0-ievent.1",
-    "node-opcua-data-model": "npm:@waldner-laboreinrichtungen/node-opcua-data-model@2.169.0-ievent.1",
-    "node-opcua-date-time": "npm:@waldner-laboreinrichtungen/node-opcua-date-time@2.169.0-ievent.1",
-    "node-opcua-debug": "npm:@waldner-laboreinrichtungen/node-opcua-debug@2.169.0-ievent.1",
-    "node-opcua-enum": "npm:@waldner-laboreinrichtungen/node-opcua-enum@2.169.0-ievent.1",
-    "node-opcua-factory": "npm:@waldner-laboreinrichtungen/node-opcua-factory@2.169.0-ievent.1",
-    "node-opcua-status-code": "npm:@waldner-laboreinrichtungen/node-opcua-status-code@2.169.0-ievent.1",
-    "node-opcua-variant": "npm:@waldner-laboreinrichtungen/node-opcua-variant@2.169.0-ievent.1"
+    "node-opcua-assert": "npm:@waldner-laboreinrichtungen/node-opcua-assert@2.169.0-ievent.2",
+    "node-opcua-basic-types": "npm:@waldner-laboreinrichtungen/node-opcua-basic-types@2.169.0-ievent.2",
+    "node-opcua-binary-stream": "npm:@waldner-laboreinrichtungen/node-opcua-binary-stream@2.169.0-ievent.2",
+    "node-opcua-data-model": "npm:@waldner-laboreinrichtungen/node-opcua-data-model@2.169.0-ievent.2",
+    "node-opcua-date-time": "npm:@waldner-laboreinrichtungen/node-opcua-date-time@2.169.0-ievent.2",
+    "node-opcua-debug": "npm:@waldner-laboreinrichtungen/node-opcua-debug@2.169.0-ievent.2",
+    "node-opcua-enum": "npm:@waldner-laboreinrichtungen/node-opcua-enum@2.169.0-ievent.2",
+    "node-opcua-factory": "npm:@waldner-laboreinrichtungen/node-opcua-factory@2.169.0-ievent.2",
+    "node-opcua-status-code": "npm:@waldner-laboreinrichtungen/node-opcua-status-code@2.169.0-ievent.2",
+    "node-opcua-variant": "npm:@waldner-laboreinrichtungen/node-opcua-variant@2.169.0-ievent.2"
   },
   "devDependencies": {
-    "node-opcua-extension-object": "npm:@waldner-laboreinrichtungen/node-opcua-extension-object@2.169.0-ievent.1",
-    "node-opcua-numeric-range": "npm:@waldner-laboreinrichtungen/node-opcua-numeric-range@2.169.0-ievent.1",
-    "node-opcua-packet-analyzer": "npm:@waldner-laboreinrichtungen/node-opcua-packet-analyzer@2.169.0-ievent.1"
+    "node-opcua-extension-object": "npm:@waldner-laboreinrichtungen/node-opcua-extension-object@2.169.0-ievent.2",
+    "node-opcua-numeric-range": "npm:@waldner-laboreinrichtungen/node-opcua-numeric-range@2.169.0-ievent.2",
+    "node-opcua-packet-analyzer": "npm:@waldner-laboreinrichtungen/node-opcua-packet-analyzer@2.169.0-ievent.2"
   },
   "author": "Etienne Rossignon",
   "license": "MIT",

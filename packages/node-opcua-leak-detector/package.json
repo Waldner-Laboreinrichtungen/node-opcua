@@ -1,6 +1,6 @@
 {
   "name": "@waldner-laboreinrichtungen/node-opcua-leak-detector",
-  "version": "2.169.0-ievent.1",
+  "version": "2.169.0-ievent.2",
   "description": "pure nodejs OPCUA SDK - module leak-detector",
   "main": "index.js",
   "types": "index.d.ts",
@@ -30,8 +30,8 @@
   ],
   "dependencies": {
     "chalk": "4.1.2",
-    "node-opcua-assert": "npm:@waldner-laboreinrichtungen/node-opcua-assert@2.169.0-ievent.1",
-    "node-opcua-object-registry": "npm:@waldner-laboreinrichtungen/node-opcua-object-registry@2.169.0-ievent.1",
+    "node-opcua-assert": "npm:@waldner-laboreinrichtungen/node-opcua-assert@2.169.0-ievent.2",
+    "node-opcua-object-registry": "npm:@waldner-laboreinrichtungen/node-opcua-object-registry@2.169.0-ievent.2",
     "wtfnode": "^0.10.1"
   },
   "publishConfig": {

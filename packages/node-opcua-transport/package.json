@@ -1,6 +1,6 @@
 {
   "name": "@waldner-laboreinrichtungen/node-opcua-transport",
-  "version": "2.169.0-ievent.1",
+  "version": "2.169.0-ievent.2",
   "description": "pure nodejs OPCUA SDK - module transport",
   "main": "./dist/source/index.js",
   "types": "./dist/source/index.d.ts",
@@ -14,20 +14,20 @@
   },
   "dependencies": {
     "chalk": "4.1.2",
-    "node-opcua-assert": "npm:@waldner-laboreinrichtungen/node-opcua-assert@2.169.0-ievent.1",
-    "node-opcua-basic-types": "npm:@waldner-laboreinrichtungen/node-opcua-basic-types@2.169.0-ievent.1",
-    "node-opcua-binary-stream": "npm:@waldner-laboreinrichtungen/node-opcua-binary-stream@2.169.0-ievent.1",
-    "node-opcua-buffer-utils": "npm:@waldner-laboreinrichtungen/node-opcua-buffer-utils@2.169.0-ievent.1",
-    "node-opcua-chunkmanager": "npm:@waldner-laboreinrichtungen/node-opcua-chunkmanager@2.169.0-ievent.1",
-    "node-opcua-debug": "npm:@waldner-laboreinrichtungen/node-opcua-debug@2.169.0-ievent.1",
-    "node-opcua-factory": "npm:@waldner-laboreinrichtungen/node-opcua-factory@2.169.0-ievent.1",
-    "node-opcua-object-registry": "npm:@waldner-laboreinrichtungen/node-opcua-object-registry@2.169.0-ievent.1",
-    "node-opcua-packet-assembler": "npm:@waldner-laboreinrichtungen/node-opcua-packet-assembler@2.169.0-ievent.1",
-    "node-opcua-status-code": "npm:@waldner-laboreinrichtungen/node-opcua-status-code@2.169.0-ievent.1",
-    "node-opcua-utils": "npm:@waldner-laboreinrichtungen/node-opcua-utils@2.169.0-ievent.1"
+    "node-opcua-assert": "npm:@waldner-laboreinrichtungen/node-opcua-assert@2.169.0-ievent.2",
+    "node-opcua-basic-types": "npm:@waldner-laboreinrichtungen/node-opcua-basic-types@2.169.0-ievent.2",
+    "node-opcua-binary-stream": "npm:@waldner-laboreinrichtungen/node-opcua-binary-stream@2.169.0-ievent.2",
+    "node-opcua-buffer-utils": "npm:@waldner-laboreinrichtungen/node-opcua-buffer-utils@2.169.0-ievent.2",
+    "node-opcua-chunkmanager": "npm:@waldner-laboreinrichtungen/node-opcua-chunkmanager@2.169.0-ievent.2",
+    "node-opcua-debug": "npm:@waldner-laboreinrichtungen/node-opcua-debug@2.169.0-ievent.2",
+    "node-opcua-factory": "npm:@waldner-laboreinrichtungen/node-opcua-factory@2.169.0-ievent.2",
+    "node-opcua-object-registry": "npm:@waldner-laboreinrichtungen/node-opcua-object-registry@2.169.0-ievent.2",
+    "node-opcua-packet-assembler": "npm:@waldner-laboreinrichtungen/node-opcua-packet-assembler@2.169.0-ievent.2",
+    "node-opcua-status-code": "npm:@waldner-laboreinrichtungen/node-opcua-status-code@2.169.0-ievent.2",
+    "node-opcua-utils": "npm:@waldner-laboreinrichtungen/node-opcua-utils@2.169.0-ievent.2"
   },
   "devDependencies": {
-    "node-opcua-leak-detector": "npm:@waldner-laboreinrichtungen/node-opcua-leak-detector@2.169.0-ievent.1"
+    "node-opcua-leak-detector": "npm:@waldner-laboreinrichtungen/node-opcua-leak-detector@2.169.0-ievent.2"
   },
   "author": "Etienne Rossignon",
   "license": "MIT",

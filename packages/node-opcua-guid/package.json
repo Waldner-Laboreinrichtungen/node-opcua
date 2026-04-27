@@ -2,7 +2,7 @@
   "name": "@waldner-laboreinrichtungen/node-opcua-guid",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "version": "2.169.0-ievent.1",
+  "version": "2.169.0-ievent.2",
   "description": "pure nodejs OPCUA SDK - module guid",
   "scripts": {
     "build": "tsc -b",

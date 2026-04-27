@@ -1,6 +1,6 @@
 {
   "name": "@waldner-laboreinrichtungen/node-opcua-buffer-utils",
-  "version": "2.169.0-ievent.1",
+  "version": "2.169.0-ievent.2",
   "description": "pure nodejs OPCUA SDK - module buffer-utils",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -13,7 +13,7 @@
   "author": "Etienne Rossignon",
   "license": "MIT",
   "devDependencies": {
-    "node-opcua-benchmarker": "npm:@waldner-laboreinrichtungen/node-opcua-benchmarker@2.169.0-ievent.1"
+    "node-opcua-benchmarker": "npm:@waldner-laboreinrichtungen/node-opcua-benchmarker@2.169.0-ievent.2"
   },
   "repository": {
     "type": "git",

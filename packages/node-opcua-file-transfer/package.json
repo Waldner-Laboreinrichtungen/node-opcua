@@ -1,6 +1,6 @@
 {
   "name": "@waldner-laboreinrichtungen/node-opcua-file-transfer",
-  "version": "2.169.0-ievent.1",
+  "version": "2.169.0-ievent.2",
   "description": "pure nodejs OPCUA SDK - module file-transfer",
   "scripts": {
     "build": "tsc -b",
@@ -16,29 +16,29 @@
     "npm": ">=10.x"
   },
   "dependencies": {
-    "node-opcua-address-space": "npm:@waldner-laboreinrichtungen/node-opcua-address-space@2.169.0-ievent.1",
-    "node-opcua-address-space-base": "npm:@waldner-laboreinrichtungen/node-opcua-address-space-base@2.169.0-ievent.1",
-    "node-opcua-assert": "npm:@waldner-laboreinrichtungen/node-opcua-assert@2.169.0-ievent.1",
-    "node-opcua-basic-types": "npm:@waldner-laboreinrichtungen/node-opcua-basic-types@2.169.0-ievent.1",
-    "node-opcua-binary-stream": "npm:@waldner-laboreinrichtungen/node-opcua-binary-stream@2.169.0-ievent.1",
-    "node-opcua-constants": "npm:@waldner-laboreinrichtungen/node-opcua-constants@2.169.0-ievent.1",
-    "node-opcua-data-model": "npm:@waldner-laboreinrichtungen/node-opcua-data-model@2.169.0-ievent.1",
-    "node-opcua-data-value": "npm:@waldner-laboreinrichtungen/node-opcua-data-value@2.169.0-ievent.1",
-    "node-opcua-debug": "npm:@waldner-laboreinrichtungen/node-opcua-debug@2.169.0-ievent.1",
-    "node-opcua-nodeid": "npm:@waldner-laboreinrichtungen/node-opcua-nodeid@2.169.0-ievent.1",
-    "node-opcua-pseudo-session": "npm:@waldner-laboreinrichtungen/node-opcua-pseudo-session@2.169.0-ievent.1",
-    "node-opcua-service-call": "npm:@waldner-laboreinrichtungen/node-opcua-service-call@2.169.0-ievent.1",
-    "node-opcua-service-read": "npm:@waldner-laboreinrichtungen/node-opcua-service-read@2.169.0-ievent.1",
-    "node-opcua-service-translate-browse-path": "npm:@waldner-laboreinrichtungen/node-opcua-service-translate-browse-path@2.169.0-ievent.1",
-    "node-opcua-status-code": "npm:@waldner-laboreinrichtungen/node-opcua-status-code@2.169.0-ievent.1",
-    "node-opcua-variant": "npm:@waldner-laboreinrichtungen/node-opcua-variant@2.169.0-ievent.1"
+    "node-opcua-address-space": "npm:@waldner-laboreinrichtungen/node-opcua-address-space@2.169.0-ievent.2",
+    "node-opcua-address-space-base": "npm:@waldner-laboreinrichtungen/node-opcua-address-space-base@2.169.0-ievent.2",
+    "node-opcua-assert": "npm:@waldner-laboreinrichtungen/node-opcua-assert@2.169.0-ievent.2",
+    "node-opcua-basic-types": "npm:@waldner-laboreinrichtungen/node-opcua-basic-types@2.169.0-ievent.2",
+    "node-opcua-binary-stream": "npm:@waldner-laboreinrichtungen/node-opcua-binary-stream@2.169.0-ievent.2",
+    "node-opcua-constants": "npm:@waldner-laboreinrichtungen/node-opcua-constants@2.169.0-ievent.2",
+    "node-opcua-data-model": "npm:@waldner-laboreinrichtungen/node-opcua-data-model@2.169.0-ievent.2",
+    "node-opcua-data-value": "npm:@waldner-laboreinrichtungen/node-opcua-data-value@2.169.0-ievent.2",
+    "node-opcua-debug": "npm:@waldner-laboreinrichtungen/node-opcua-debug@2.169.0-ievent.2",
+    "node-opcua-nodeid": "npm:@waldner-laboreinrichtungen/node-opcua-nodeid@2.169.0-ievent.2",
+    "node-opcua-pseudo-session": "npm:@waldner-laboreinrichtungen/node-opcua-pseudo-session@2.169.0-ievent.2",
+    "node-opcua-service-call": "npm:@waldner-laboreinrichtungen/node-opcua-service-call@2.169.0-ievent.2",
+    "node-opcua-service-read": "npm:@waldner-laboreinrichtungen/node-opcua-service-read@2.169.0-ievent.2",
+    "node-opcua-service-translate-browse-path": "npm:@waldner-laboreinrichtungen/node-opcua-service-translate-browse-path@2.169.0-ievent.2",
+    "node-opcua-status-code": "npm:@waldner-laboreinrichtungen/node-opcua-status-code@2.169.0-ievent.2",
+    "node-opcua-variant": "npm:@waldner-laboreinrichtungen/node-opcua-variant@2.169.0-ievent.2"
   },
   "devDependencies": {
     "memfs": "^4.57.1",
-    "node-opcua": "npm:@waldner-laboreinrichtungen/node-opcua@2.169.0-ievent.1",
-    "node-opcua-client": "npm:@waldner-laboreinrichtungen/node-opcua-client@2.169.0-ievent.1",
-    "node-opcua-leak-detector": "npm:@waldner-laboreinrichtungen/node-opcua-leak-detector@2.169.0-ievent.1",
-    "node-opcua-nodesets": "npm:@waldner-laboreinrichtungen/node-opcua-nodesets@2.169.0-ievent.1"
+    "node-opcua": "npm:@waldner-laboreinrichtungen/node-opcua@2.169.0-ievent.2",
+    "node-opcua-client": "npm:@waldner-laboreinrichtungen/node-opcua-client@2.169.0-ievent.2",
+    "node-opcua-leak-detector": "npm:@waldner-laboreinrichtungen/node-opcua-leak-detector@2.169.0-ievent.2",
+    "node-opcua-nodesets": "npm:@waldner-laboreinrichtungen/node-opcua-nodesets@2.169.0-ievent.2"
   },
   "author": "Etienne Rossignon",
   "license": "MIT",
